@@ -28,7 +28,7 @@ const Navbar = () => {
                     alignItems={"center"}
                     justifyContent={"space-between"}
                 >
-                    <Box fontSize={"30px"}>Fairy Store</Box>
+                    <Box fontSize={"30px"} fontFamily={"cursive"}>Fairy Store</Box>
                     <Flex alignItems={"center"}>
                         <Stack direction={"row"} spacing={7}>
                             <Button onClick={toggleColorMode}>
