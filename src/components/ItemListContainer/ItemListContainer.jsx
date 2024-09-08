@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import "./../ItemListContainer/ItemListContainer.css";
 
-const ItemListContainer = ({greeting, products}) => {
+export const ItemListContainer = ({greeting, products}) => {
     console.log (products);
 
     return (
@@ -22,5 +22,3 @@ const ItemListContainer = ({greeting, products}) => {
         } </Box>
     )
 }
-
-export default ItemListContainer;

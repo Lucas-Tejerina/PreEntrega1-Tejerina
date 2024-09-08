@@ -1,7 +1,7 @@
 import { Flex, Text } from "@chakra-ui/react";
 import { RiShoppingCart2Line } from "react-icons/ri";
 
-const CartWidget = () => {
+export const CartWidget = () => {
     return (
         <Flex color={"lightblue"}justifyContent={"space-between"}>
         <RiShoppingCart2Line  size={"35px"}/>
@@ -10,4 +10,3 @@ const CartWidget = () => {
     )
 };
 
-export default CartWidget;
