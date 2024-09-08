@@ -1,24 +1,48 @@
-import { Box } from "@chakra-ui/react";
-import "./../ItemListContainer/ItemListContainer.css";
+import {
+    Box,
+    Card,
+    Stack,
+    Heading,
+    CardBody,
+    Divider,
+    CardFooter,
+    ButtonGroup,
+    Image,
+    Text,
+  } from "@chakra-ui/react";
+  import { Link } from "react-router-dom";
+  import "./../ItemListContainer/ItemListContainer.css"
 
-export const ItemListContainer = ({greeting, products}) => {
-    console.log (products);
-
+  export const ItemListContainer = ({ products }) => {
     return (
-        <Box className= "itemlist"> {
-            products.map((product) => {
-                return (
-                    <Box className="card">
-                    <img src={product.image} alt={product.name}  className="card__img"/>
-                    <Box className="card__container__info">
-                    <h2 className="card__title">{product.name}</h2>
-                    <p className="card__text">{product.description}</p>
-                    <p className="card__price">${product.price}</p>
-                    <button className="card__button">Comprar</button>
-                    </Box>
-                    </Box>
-                )
-            })
-        } </Box>
-    )
-}
+      <Box display={"flex"} flexWrap={"wrap"}>
+        {products.map((product) => (
+          <Card key={product.id} maxW="sm" margin={"1rem"}>
+            <CardBody>
+              <Image
+                src={product.thumbnail}
+                alt={product.name}
+                borderRadius="lg"
+              />
+              <Stack mt="6" spacing="3">
+                <Heading size="md">{product.title}</Heading>
+                <Text>{product.description}</Text>
+                <Text color="blue.600" fontSize="2xl">
+                  {product.price}
+                </Text>
+              </Stack>
+            </CardBody>
+            <Divider />
+            <CardFooter>
+              <ButtonGroup spacing="2">
+                <Link to={`/item/${product.id}`}>
+                  {" "}
+                  Ir a detalle del producto{" "}
+                </Link>
+              </ButtonGroup>
+            </CardFooter>
+          </Card>
+        ))}
+      </Box>
+    );
+  };
