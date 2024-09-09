@@ -8,7 +8,7 @@ export const useProducts = () => {
   React.useEffect(() => {
     getAllProducts()
       .then((response) => {
-        setProducts(response.data.products);
+        setProducts(response.data);
       })
       .catch((error) => {
         console.error(error);

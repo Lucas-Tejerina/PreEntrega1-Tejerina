@@ -15,7 +15,7 @@ import {
   import { CartWidget } from "../CartWidget";
   import { Link } from "react-router-dom";
   import { useCategory } from "../../hooks";
-  import "./../Navbar/Navbar.css"
+  import "./../Navbar/Navbar.css";
   
   export const NavBar = () => {
   
@@ -34,8 +34,8 @@ import {
               </MenuButton>
               <MenuList height={"300px"} overflowY={"scroll"}>
                 {category.map((category) => (
-                  <MenuItem key={category.slug}>
-                    <Link to={`/category/${category.slug}`}>{category.name}</Link>
+                  <MenuItem key={category}>
+                    <Link to={`/category/${category.toLowerCase()}`}>{category}</Link>
                   </MenuItem>
                 ))}
               </MenuList>

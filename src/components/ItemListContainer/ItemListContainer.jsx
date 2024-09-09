@@ -11,7 +11,8 @@ import {
     Text,
   } from "@chakra-ui/react";
   import { Link } from "react-router-dom";
-  import "./../ItemListContainer/ItemListContainer.css"
+  import "./../ItemListContainer/ItemListContainer.css";
+
 
   export const ItemListContainer = ({ products }) => {
     return (
@@ -20,7 +21,7 @@ import {
           <Card key={product.id} maxW="sm" margin={"1rem"}>
             <CardBody>
               <Image
-                src={product.thumbnail}
+                src={product.image}
                 alt={product.name}
                 borderRadius="lg"
               />

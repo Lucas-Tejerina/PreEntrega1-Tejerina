@@ -14,6 +14,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 export const ItemDetailContainer = ({ product }) => {
+
   const [showCount, setShowCount] = useState(false);
   const [count, setCount] = useState(0);
 
@@ -42,8 +43,8 @@ export const ItemDetailContainer = ({ product }) => {
           <Image
             rounded={"md"}
             alt={"product image"}
-            src={product.thumbnail}
-            fit={"cover"}
+            src={product.image}
+            fit={"contain"}
             align={"center"}
             w={"100%"}
             h={{ base: "100%", sm: "400px", lg: "500px" }}

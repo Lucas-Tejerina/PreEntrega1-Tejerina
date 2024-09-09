@@ -8,7 +8,7 @@ export const useProductById = (id) => {
   React.useEffect(() => {
     getProductById(id)
       .then((response) => {
-        setProduct(response.data);
+        setProduct(response);
       })
       .catch((error) => {
         console.error(error);

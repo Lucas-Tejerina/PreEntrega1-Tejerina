@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Natsu Dragneel",
+        "price": 777,
+        "description": "Mago de Fuego, Natsu",
+        "image": "/img/natsu.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 2,
+        "name": "Gray Fullbuster",
+        "price": 777,
+        "description": "Mago de Hielo, Gray",
+        "image": "/img/gray.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 3,
+        "name": "Erza Scarlet",
+        "price": 777,
+        "description": "Maga de Reequipacion, Erza",
+        "image": "/img/erza.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 4,
+        "name": "Lucy Heartfilia",
+        "price": 777,
+        "description": "Maga de Espiritus, Lucy",
+        "image": "/img/lucy.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 5,
+        "name": "Wendy Marvell",
+        "price": 777,
+        "description": "Maga de Viento, Wendy",
+        "image": "/img/wendy.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 6,
+        "name": "Juvia Lockser",
+        "price": 777,
+        "description": "Maga de Agua, Juvia",
+        "image": "/img/juvia.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 7,
+        "name": "Happy",
+        "price": 777,
+        "description": "Exceed Azul",
+        "image": "/img/happy.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 8,
+        "name": "Charle",
+        "price": 777,
+        "description": "Exceed Blanco",
+        "image": "/img/charle.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 9,
+        "name": "Pantherlily",
+        "price": 777,
+        "description": "Exceed Negro",
+        "image": "/img/lily.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 10,
+        "name": "Jellal Fernandez",
+        "price": 777,
+        "description": "Mago de Cuerpo Celestial, Jellal",
+        "image": "/img/jellal.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 11,
+        "name": "Gazille Redfox",
+        "price": 777,
+        "description": "Mago de Metal, Gazille",
+        "image": "/img/gazille.webp",
+        "category": "Figuras"
+    },
+    {
+        "id": 12,
+        "name": "Zeref",
+        "price": 777,
+        "description": "Mago Oscuro, Zeref",
+        "image": "/img/zeref.webp",
+        "category": "Funko"
+    }
+]
