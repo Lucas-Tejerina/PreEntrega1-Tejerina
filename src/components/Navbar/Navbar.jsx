@@ -29,15 +29,24 @@ import {
               <Link to="/" className="text">Fairy Store</Link>
             </Box>
             <Menu>
+            <Link to="/category/figuras" className="text">Figuras</Link>
+            <Link to="/category/funkos" className="text">Funkos</Link>
+            <Link to="/category/llaves" className="text">Llaves</Link>
               <MenuButton as={Link} cursor="pointer" style={{ marginLeft: 30 }} className="text">
-                Categorias
+                Mangas🔽
               </MenuButton>
-              <MenuList height={"300px"} overflowY={"scroll"}>
-                {category.map((category) => (
+              <MenuList height={"auto"} >
+                <MenuItem>
+                <Link to="/category/mangas S1" >Fairy Tail S1</Link>
+                </MenuItem>
+                <MenuItem>
+                <Link to="/category/mangas S100" >Fairy Tail S100</Link>
+                </MenuItem>
+                {/* {category.map((category) => (
                   <MenuItem key={category}>
                     <Link to={`/category/${category.toLowerCase()}`}>{category}</Link>
                   </MenuItem>
-                ))}
+                ))} */}
               </MenuList>
             </Menu>
             <Flex alignItems={"center"}>
@@ -53,7 +62,7 @@ import {
                   >
                     <Avatar
                       size={"sm"}
-                      src={"https://avatars.dicebear.com/api/male/username.svg"}
+                      src={'./../src/assets/img/icon/iconhappy.png'}
                     />
                   </MenuButton>
                   <MenuList alignItems={"center"}>
@@ -61,12 +70,12 @@ import {
                     <Center>
                       <Avatar
                         size={"2xl"}
-                        src={"https://avatars.dicebear.com/api/male/username.svg"}
+                        src={'./../src/assets/img/icon/iconhappy.png'}
                       />
                     </Center>
                     <br />
                     <Center>
-                      <p>Username</p>
+                      <p>LuckasWinchester</p>
                     </Center>
                     <br />
                     <MenuDivider />
