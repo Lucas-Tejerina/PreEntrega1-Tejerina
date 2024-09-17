@@ -5,7 +5,8 @@
         "price": 777,
         "description": "Mago de Fuego, Natsu",
         "image": "/img/natsu.webp",
-        "category": "Figuras"
+        "category": "Figuras",
+        "stock": 20
     },
     {
         "id": 2,

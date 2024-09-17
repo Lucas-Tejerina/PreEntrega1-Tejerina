@@ -16,7 +16,6 @@ import {
   import { Link } from "react-router-dom";
   import { useCategory } from "../../hooks";
   import "./../Navbar/Navbar.css";
-  
   export const NavBar = () => {
   
     const { category } = useCategory();
