@@ -16,6 +16,8 @@ import {
   import { Link } from "react-router-dom";
   import { useCategory } from "../../hooks";
   import "./../Navbar/Navbar.css";
+  import { createProductsFirestore } from "../../helpers";
+  
   export const NavBar = () => {
   
     const { category } = useCategory();
@@ -48,6 +50,7 @@ import {
                 ))} */}
               </MenuList>
             </Menu>
+            <Button onClick={() => createProductsFirestore('products')}>crear</Button>
             <Flex alignItems={"center"}>
               <Stack direction={"row"} spacing={7}>
                 <CartWidget />
