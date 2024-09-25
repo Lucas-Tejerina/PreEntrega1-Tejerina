@@ -1,10 +1,9 @@
 import React from "react";
 import { ItemListContainer } from "../components";
-import { useProducts } from "../hooks/useProducts";
+import { useItemsCollection } from "../hooks/useItemsCollection";
 
 export const Home = () => {
+    const { items, loading } = useItemsCollection("products");
 
-  const { products, loading } = useProducts();
-
-  return <ItemListContainer products={products} />;
+    return <ItemListContainer products={items} />;
 };

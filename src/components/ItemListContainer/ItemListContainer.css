@@ -6,6 +6,7 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    margin: 20px ;
 }
 
 .card__text {
@@ -15,4 +16,5 @@
 .card__img {
     margin: auto;
 }
+
 

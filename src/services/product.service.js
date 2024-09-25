@@ -21,11 +21,11 @@ export async function getProductsByCategory(category) {
   return allProducts.filter((product) => product.category.toLowerCase() == category.toLowerCase());
 }
 
-export async function getCategories() {
-  let allProducts = await getData();
-  allProducts=allProducts.data;
+// export async function getCategories() {
+//   let allProducts = await getData();
+//   allProducts=allProducts.data;
 
-    const categoriasUnicas = [...new Set(allProducts.map(item => item.category))];
-    return categoriasUnicas
-;
-}
+//     const categoriasUnicas = [...new Set(allProducts.map(item => item.category))];
+//     return categoriasUnicas
+// ;
+// }

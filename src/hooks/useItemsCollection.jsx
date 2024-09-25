@@ -3,15 +3,18 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/config";
 // import { getAllProducts } from "../services/product.service";
 
-export const useProducts = () => {
-  const [products, setProducts] = React.useState([]);
+export const useItemsCollection = (categoryName) => {
+  const [items, setItems] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    const productsCollection = collection(db, 'products');
-    getDocs(productsCollection).then((snapshot) => {
-      setProducts(snapshot.docs.map((doc) => ({id: doc.id, ...doc.data()})))
-    }).catch((error) => setError(true)).finally(() => setLoading(false));
+    const productsCollection = collection(db, categoryName);
+    getDocs(productsCollection)
+    .then((snapshot) => {
+      setItems(snapshot.docs.map((doc) => ({id: doc.id, ...doc.data()})))
+    })
+    .catch((error) => setError(true))
+    .finally(() => setLoading(false));
 
     // getAllProducts()
     //   .then((response) => {
@@ -23,5 +26,5 @@ export const useProducts = () => {
     //   .finally(() => setLoading(false));
   }, []);
 
-  return { products, loading };
+  return { items, loading };
 };
