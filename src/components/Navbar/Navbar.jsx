@@ -42,11 +42,11 @@ import {
                 <MenuItem>
                 <Link to="/category/mangas S100" >Fairy Tail S100</Link>
                 </MenuItem>
-                {/* {category.map((category) => (
-                  <MenuItem key={category}>
-                    <Link to={`/category/${category.toLowerCase()}`}>{category}</Link>
-                  </MenuItem>
-                ))} */}
+                {/* {items.map((category) => (
+                <MenuItem key={category.slug}>
+                  <Link to={`/category/${category.slug}`}>{category.name}</Link>
+                </MenuItem>
+              ))} */}
               </MenuList>
             </Menu>
             <Flex alignItems={"center"}>
