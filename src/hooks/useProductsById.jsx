@@ -13,17 +13,6 @@ export const useProductById = (id) => {
       setProduct({id: snapshot.id, ...snapshot.data()})
     }).catch((error) => {console.log(error)}).finally(() => setLoading(false));
 
-
-    // getProductById(id)
-    //   .then((response) => {
-    //     setProduct(response);
-    //   })
-    //   .catch((error) => {
-    //     console.error(error);
-    //   })
-    //   .finally(() => {
-    //     setLoading(false);
-    //   });
   }, []);
 
   return { product, loading };
